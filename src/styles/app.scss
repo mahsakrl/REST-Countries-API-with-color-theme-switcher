@@ -134,6 +134,15 @@
       margin-right: 0px;
     }
   }
+  .header{
+    flex-direction: column;
+    justify-content: space-around;
+    height:80px;
+    div{
+      padding: 0 !important;
+      margin:0 !important;
+    }
+  }
   .dropdown {
     button {
       margin-left: 50px;

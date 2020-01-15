@@ -29,36 +29,36 @@
           </div>
         </div>
         <div class="info">
-          <div style="color:$vdark-blue-txt;font-weight:800;font-size:20px">{{item.name}}</div>
+          <div class="info-name">{{item.name}}</div>
           <div class="info-detail">
             <div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Native Name:</p>
                 <p style="font-size:14px">{{item.nativeName}}</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Population:</p>
                 <p style="font-size:14px">{{item.population}}</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Region:</p>
                 <p style="font-size:14px">{{item.region}}</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Sub Region:</p>
                 <p style="font-size:14px">{{item.population}}</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Capital:</p>
                 <p style="font-size:14px">{{item.capital}}</p>
               </div>
             </div>
             <div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Top level Domain:</p>
                 <p style="font-size:14px">{{item.capital}}</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Currencies:</p>
                 <p
                   style="font-size:14px"
@@ -66,7 +66,7 @@
                   :key="index"
                 >{{item.name}},</p>
               </div>
-              <div class="d-flex flex-row">
+              <div class="title-text-alignment">
                 <p :class="{'title-info':true,'active-title':darkMode}">Language:</p>
                 <p
                   style="font-size:14px"
@@ -79,7 +79,7 @@
           <div>
             <div class="border">
               <p :class="{'title-info':true,'active-title':darkMode}">Border Countries:</p>
-              <p style="width:90px;height:30px" v-for="(i,index) in item.borders" :key="index">
+              <p class="item-border" v-for="(i,index) in item.borders" :key="index">
                 <button :class="{btn:true, 'btn-info':true, 'active':darkMode}" style="border:none">{{i}}</button>
               </p>
             </div>
