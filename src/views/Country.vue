@@ -77,7 +77,7 @@
             </div>
           </div>
           <div>
-            <div style="height:50px;display:flex;align-items:center;justify-content:flex-start">
+            <div class="border">
               <p :class="{'title-info':true,'active-title':darkMode}">Border Countries:</p>
               <p style="width:90px;height:30px" v-for="(i,index) in item.borders" :key="index">
                 <button :class="{btn:true, 'btn-info':true, 'active':darkMode}" style="border:none">{{i}}</button>

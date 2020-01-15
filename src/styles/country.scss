@@ -15,6 +15,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
   button {
     margin-left: 60px;
     width: 100px;
@@ -34,7 +36,7 @@
 }
 .container-country {
   display: flex;
-  flex-flow: column;
+  // flex-flow: column;
   width: 100%;
   height: 100%;
   background-color: $white;
@@ -54,7 +56,7 @@
   padding-left: 60px;
 }
 .flag-img {
-  width: 300px;
+  width: 70%;
   height: 300px;
   display: flex;
   align-items: center;
@@ -95,4 +97,40 @@
 }
 .active-title {
   color: $white;
+}
+.border {
+  margin-top: 60px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 700px) {
+  .container-country {
+    flex-flow: column;
+  }
+  .info {
+    width: 100%;
+    height: 100%;
+
+    div {
+      height: 100%;
+      flex-flow: column;
+      padding-left: 10px;
+    }
+  }
+  .flag {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-back {
+    button {
+      margin: 2px;
+    }
+  }
 }
